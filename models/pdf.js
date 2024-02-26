@@ -4,10 +4,8 @@ const bcrypt = require('bcrypt');
 const Jwt = require('jsonwebtoken')
 
 const pdfSchema=new mongoose.Schema({
-    pdf:{
-        type:String,
-        require:true
-    }
+    title: String,
+  pdfPath: String,
 })
 
 
