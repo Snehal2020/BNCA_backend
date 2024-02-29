@@ -14,7 +14,7 @@ router.get("/get-faculty", getfacultyController);
 router.get("/get-faculty/:slug", getSinglefaculty);
 
 router.get("/get-specificfaculty/:departmentId", getSpecificfaculty);
-router.get("/get-specificfaculty", getSpecificfaculty);
+// router.get("/get-specificfaculty", getSpecificfaculty);
 
 router.get("/faculty-photo/:pid", facultyPhotoController);
 

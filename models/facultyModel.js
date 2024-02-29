@@ -41,7 +41,8 @@ const facultySchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    project_images: {
+    project_images: 
+      {
         data: Buffer,
         contentType: String,
       }

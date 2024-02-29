@@ -10,6 +10,7 @@ const {
     singleDeptController
 
   } = require("./../controllers/dep_controller");
+  const {getDepartmentName}=require('./../controllers/facultyController')
 
 const router = express.Router() 
 router.use(express.json())
@@ -37,6 +38,8 @@ router.post(
   
   //single category
   router.get("/single-department/:slug", singleDeptController);
+
+  router.get("/departmentname",getDepartmentName);
   
   //delete category
   router.delete(
